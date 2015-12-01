@@ -19,7 +19,6 @@ public class EntityManagerProducer {
     @PersistenceContext(unitName = "local")
     private EntityManager localManager;
     
-    @RequestScoped
     @Produces
     public EntityManager localEntityManager(){
         return this.localManager;
